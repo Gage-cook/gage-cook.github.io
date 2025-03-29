@@ -1,66 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gage Cook | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
-    body { background-color: #111; color: #eee; padding: 20px; }
-    header { text-align: center; margin-bottom: 40px; }
-    h1 { font-size: 2.5em; color: #f44; }
-    p { font-size: 1.1em; margin-top: 10px; color: #ccc; }
-    section { margin: 40px 0; }
-    h2 { color: #fff; margin-bottom: 15px; }
-    .project { background-color: #1c1c1c; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-    .project h3 { margin-bottom: 10px; color: #f44; }
-    .project p { color: #ccc; }
-    .contact, .resume { text-align: center; margin-top: 50px; }
-    .btn { background: #f44; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
-    a { color: #f88; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Gage Cook</h1>
-    <p>Computer Information Systems | University of Southern Indiana</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gage Cook | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body {
+        background-color: #0d1117;
+        color: #e6edf3;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(90deg, #8e2de2, #4a00e0);
+        padding: 60px 20px;
+        text-align: center;
+        color: white;
+      }
+      header h1 {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      nav {
+        text-align: center;
+        padding: 20px;
+      }
+      nav a {
+        margin: 0 15px;
+        color: #58a6ff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .project {
+        background-color: #161b22;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.2s;
+      }
+      .project:hover {
+        transform: scale(1.02);
+        background-color: #1f2937;
+      }
+      .project h3 {
+        color: #f43f5e;
+      }
+      .resume, .contact {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .btn {
+        display: inline-block;
+        background: #f43f5e;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #8b949e;
+      }
+    </style>
+  </head>
+  <body>
+    <header data-aos="fade-down">
+      <h1>Gage Cook</h1>
+      <p>Computer Information Systems | University of Southern Indiana</p>
+    </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a soon-to-be graduate with a strong passion for technology and solving real-world problems through IT solutions. Whether it’s support, development, cybersecurity, or analytics—I’m ready to work and grow.</p>
-  </section>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <section>
-    <h2>Projects</h2>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        I’m a soon-to-be graduate with a strong passion for technology and solving real-world
+        problems through IT solutions. Whether it's support, development, cybersecurity, or
+        analytics—I’m ready to work and grow.
+      </p>
+    </section>
 
-    <div class="project">
-      <h3>IT Support Ticket System</h3>
-      <p>A help desk-style system where users submit tech issues and admins can track and resolve them. Built with Node.js and MongoDB.</p>
-    </div>
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Data Visualization Dashboard</h3>
-      <p>Uploads CSV files and generates clean visual summaries using Chart.js. Ideal for non-technical users needing quick insights.</p>
-    </div>
+      <div class="project">
+        <h3>IT Support Ticket System</h3>
+        <p>
+          A help desk-style system where users submit tech issues and admins can track and resolve
+          them. Built with Node.js and MongoDB.
+        </p>
+      </div>
 
-    <div class="project">
-      <h3>CRUD REST API</h3>
-      <p>Simple REST API for managing items with full Create, Read, Update, Delete functionality. Built with Express.js and deployed to Render.</p>
-    </div>
+      <div class="project">
+        <h3>Data Visualization Dashboard</h3>
+        <p>
+          Uploads CSV files and generates clean visual summaries using Chart.js. Ideal for
+          non-technical users needing quick insights.
+        </p>
+      </div>
 
-  </section>
+      <div class="project">
+        <h3>CRUD REST API</h3>
+        <p>
+          Simple REST API for managing items with full Create, Read, Update, Delete functionality.
+          Built with Express.js and deployed to Render.
+        </p>
+      </div>
+    </section>
 
-  <section class="resume">
-    <h2>Resume</h2>
-    <a class="btn" href="resume.pdf" download>Download My Resume</a>
-  </section>
+    <section id="resume" class="resume" data-aos="fade-up">
+      <h2>Resume</h2>
+      <a href="#" class="btn">Download My Resume</a>
+    </section>
 
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:businessgagecook@gmail.com">businessgagecook@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/gage-cook" target="_blank">@gage-cook</a></p>
-  </section>
-</body>
+    <section id="contact" class="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:businessgagecook@gmail.com">businessgagecook@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/gage-cook" target="_blank">@gage-cook</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Gage Cook. All rights reserved.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
 </html>
